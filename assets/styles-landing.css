@@ -3,20 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* =========== background gradiant =====================*/
 body {
-  background: #2c3e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #4ca1af,
-    #2c3e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #4ca1af,
-    #2c3e50
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: gray;
+  font-family: "calibri";
 }
+/* =========== barra de navegador =====================*/
 
 .navbar {
   display: flex;
@@ -27,9 +19,10 @@ body {
   font-family: "calibri";
 }
 
-ul a {
+.nav-links {
   color: whitesmoke;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .nav-list {
@@ -40,4 +33,82 @@ ul a {
 
 nav img {
   height: 50px;
+}
+
+/* =========== contenedor HERO =====================*/
+
+.info_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 90px;
+  gap: 150px;
+  font-family: "calibri";
+}
+
+.img-main {
+  height: 280px;
+}
+
+.hero-card {
+  width: max-content;
+}
+
+.hero-info {
+  padding: 30px;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-info h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.hero-info p {
+  text-align: left;
+}
+
+.btns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 2px 30px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.primary {
+  background-color: black;
+  color: azure;
+  border: white solid;
+  font-weight: 500;
+}
+
+.secondary {
+  background-color: azure;
+  color: black;
+  border: black solid;
+  font-weight: 500;
+}
+
+/* =========== contenedor HERO =====================*/
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 50px;
+}
+
+.parrafo {
+  text-align: center;
+  color: white;
 }
