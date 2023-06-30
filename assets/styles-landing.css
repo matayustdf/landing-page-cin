@@ -37,6 +37,7 @@ body {
   background: var(--bg-contenedor-history);
   padding: 1rem;
   font-family: "calibri";
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .nav-links {
