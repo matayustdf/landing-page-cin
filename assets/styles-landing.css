@@ -1,3 +1,12 @@
+:root {
+  --bg-navbar: #f8e6e6;
+  --color-text-navbar: #f9f5e3;
+  --bg-contenedor: #e4f1ed;
+  --color-parrafo: #3e3e3e;
+  --bg-contenedor-history: #f3e8f7;
+  --color-text-history: #3e3e3e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +14,18 @@
 }
 /* =========== background gradiant =====================*/
 body {
-  background: gray;
+  background: #d9a7c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fffcdc,
+    #d9a7c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fffcdc,
+    #d9a7c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: "calibri";
 }
 /* =========== barra de navegador =====================*/
@@ -14,13 +34,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: var(--bg-contenedor-history);
   padding: 1rem;
   font-family: "calibri";
 }
 
 .nav-links {
-  color: whitesmoke;
+  color: var(--color-text-history);
   text-decoration: none;
   font-weight: 600;
 }
@@ -67,10 +87,12 @@ nav img {
 .hero-info h1 {
   font-weight: 600;
   font-size: 2rem;
+  color: var(--color-parrafo);
 }
 
 .hero-info p {
   text-align: left;
+  color: var(--color-parrafo);
 }
 
 .btns {
@@ -109,6 +131,11 @@ nav img {
 }
 
 .parrafo {
+  padding: 15px;
+  border-radius: 15px;
+  width: 60%;
+  background: var(--bg-contenedor-history);
   text-align: center;
-  color: white;
+  color: var(--color-parrafo);
+  box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
 }
