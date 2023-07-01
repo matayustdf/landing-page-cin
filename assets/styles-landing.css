@@ -37,6 +37,7 @@ body {
   background: var(--bg-contenedor-history);
   padding: 1rem;
   font-family: "calibri";
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .nav-links {
@@ -61,64 +62,95 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding-top: 90px;
+  padding-bottom: 90px;
   gap: 150px;
   font-family: "calibri";
+  background-color: #9752cc;
 }
 
 .img-main {
   height: 280px;
 }
 
-.hero-card {
-  width: max-content;
-}
-
 .hero-info {
-  padding: 30px;
-  height: 100%;
-  width: fit-content;
+  padding: 90px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  background: #bc80ea;
 }
 
 .hero-info h1 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
   color: var(--color-parrafo);
 }
 
+.hero-info span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .hero-info p {
   text-align: left;
   color: var(--color-parrafo);
+  font-size: xx-large;
 }
 
 .btns {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
 }
 
-.btn {
-  padding: 2px 30px;
+.primary {
+  box-shadow: inset 0px 1px 0px 0px #efdcfb;
+  background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+  background-color: #dfbdfa;
+  border-radius: 6px;
+  border: 1px solid #c584f3;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
   text-decoration: none;
-  border-radius: 15px;
+  text-shadow: 0px 1px 0px #9752cc;
 }
 
-.primary {
-  background-color: black;
-  color: azure;
-  border: white solid;
-  font-weight: 500;
+.primary:hover {
+  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  background-color: #bc80ea;
+}
+.primary:active {
+  position: relative;
+  top: 1px;
 }
 
 .secondary {
-  background-color: azure;
-  color: black;
-  border: black solid;
-  font-weight: 500;
+  box-shadow: inset 0px 1px 0px 0px #fbafe3;
+  background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+  background-color: #ff5bb0;
+  border-radius: 6px;
+  border: 1px solid #ee1eb5;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+.secondary:hover {
+  background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+  background-color: #ef027d;
+}
+.secondary:active {
+  position: relative;
+  top: 1px;
 }
 
 /* =========== contenedor HERO =====================*/
