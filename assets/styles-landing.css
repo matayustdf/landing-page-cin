@@ -163,11 +163,14 @@ nav img {
 /* =========== contenedor ABOUT=====================*/
 
 .description {
-  padding: 100px 50px;
-  gap: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 1000px;
+  height: 500px;
+  padding: 100px 50px;
+  background: #71b280;
+  gap: 25px;
 }
 
 .parrafo {
