@@ -160,21 +160,62 @@ nav img {
   top: 1px;
 }
 
-/* =========== contenedor HERO =====================*/
+/* =========== contenedor ABOUT=====================*/
 
 .description {
+  padding: 100px 50px;
+  gap: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px 50px;
 }
 
 .parrafo {
   padding: 15px;
   border-radius: 15px;
-  width: 60%;
+  width: 500px;
   background: var(--bg-contenedor-history);
   text-align: center;
   color: var(--color-parrafo);
   box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
+  font-size: large;
+}
+
+.img-city {
+  height: 350px;
+  box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+/* =========== contenedor Benefits =====================*/
+.benefits-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 75px;
+  gap: 50px;
+}
+
+.benefits-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px;
+  color: #f9f5e3;
+  background-color: #0f2027;
+  border-radius: 15px;
+  box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
+  gap: 25px;
+}
+
+.text-card {
+  height: fit-content;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+}
+
+.benefits-card img {
+  height: 250px;
 }
