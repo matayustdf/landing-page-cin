@@ -185,6 +185,11 @@ nav img {
   height: 350px;
   box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.img-city:hover {
+  height: 400px;
 }
 
 /* =========== contenedor Benefits =====================*/
@@ -207,12 +212,18 @@ nav img {
   border-radius: 15px;
   box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
   gap: 25px;
+  transition: all 700ms ease-in-out;
+}
+
+.benefits-card:hover {
+  background: #f9f5e3;
+  color: #0f2027;
+  transform: translateY(-20px);
 }
 
 .text-card {
   height: fit-content;
   width: 250px;
-  height: 100px;
   text-align: center;
 }
 
