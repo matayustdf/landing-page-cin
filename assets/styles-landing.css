@@ -164,13 +164,17 @@ nav img {
 
 .description {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 1000px;
-  height: 500px;
-  padding: 100px 50px;
-  background: #71b280;
+  justify-content: center;
   gap: 25px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 25px;
 }
 
 .parrafo {
@@ -182,6 +186,7 @@ nav img {
   color: var(--color-parrafo);
   box-shadow: 9px 9px 4px 0px rgba(0, 0, 0, 0.1);
   font-size: large;
+  margin: 1rem;
 }
 
 .img-city {
@@ -232,4 +237,25 @@ nav img {
 
 .benefits-card img {
   height: 250px;
+}
+
+/* =========== contenedor footer =====================*/
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #f9f5e3;
+}
+
+.footer-image img {
+  max-width: 100px;
 }
